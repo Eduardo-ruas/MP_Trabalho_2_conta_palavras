@@ -15,4 +15,4 @@ std::map<std::string, int> conta_palavras_arquivo(const std::string& arquivo);
 // Função que imprime a contagem das palavras
 void imprime_contagem(const std::map<std::string, int>& contagem);
 
-#endif  // CONTA_PALAVRAS_HPP
+#endif  // CONTA_PALAVRAS_HPP_
