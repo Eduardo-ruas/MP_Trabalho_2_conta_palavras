@@ -1,5 +1,8 @@
-#include "conta_palavras.hpp"
-#include <iostream>
+// Copyright 2025 Seu Nome
+
+#include "conta_palavras.hpp"  // NOLINT(build/include_subdir)
+#include <iostream>             // Cabeçalhos de bibliotecas C++
+#include <string>               // Cabeçalhos de bibliotecas C++
 
 int main() {
     try {
