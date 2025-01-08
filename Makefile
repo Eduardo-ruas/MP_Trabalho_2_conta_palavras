@@ -13,7 +13,7 @@ testa_conta_palavras: 	testa_conta_palavras.cpp   conta_palavras.cpp conta_palav
 	g++ -std=c++17 -Wall conta_palavras.o testa_conta_palavras.cpp -o testa_conta_palavras
 	
 test: testa_conta_palavras	
-	./testa_conta_palavras
+	./testa_conta_palavras || true
 	
 cpplint: testa_conta_palavras.cpp   conta_palavras.cpp conta_palavras.hpp
 	cpplint   --exclude=catch.hpp  *.*

@@ -23,16 +23,22 @@ TEST_CASE("Testa a contagem de palavras no texto", "[conta_palavras]") {
     REQUIRE(contagem["utilizado"] == 1);
 }
 
-TEST_CASE("Testa se a contagem de palavras no texto esta correta", "[conta_palavras]") {
+TEST_CASE("Testa contagem sem diferenciar maiúsculas e minúsculas", "[conta_palavras]") {
+    std::string texto = "Este eStE estE";
+    auto contagem = conta_palavras(texto);
+    REQUIRE(contagem["este"] == 3); 
+}
+
+TEST_CASE("Testa falha em contagem incorreta", "[conta_palavras]") {
     std::string texto = "Este texto é o texto que será utilizado";
 
     auto contagem = conta_palavras(texto);
 
     REQUIRE(contagem["este"] == 1);
-    REQUIRE(contagem["texto"] == 1);
+    REQUIRE(contagem["texto"] == 2);
     REQUIRE(contagem["é"] == 1);
     REQUIRE(contagem["o"] == 1);
-    REQUIRE(contagem["que"] == 1);
+    REQUIRE(contagem["que"] == 0);
     REQUIRE(contagem["será"] == 1);
     REQUIRE(contagem["utilizado"] == 1);
 }
