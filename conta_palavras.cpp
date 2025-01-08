@@ -13,7 +13,6 @@ std::map<std::string, int> conta_palavras(const std::string& texto) {
     std::string palavra;
 
     while (stream >> palavra) {
-        // Incrementa o contador da palavra
         contagem[palavra]++;
     }
 
@@ -27,7 +26,6 @@ std::map<std::string, int> conta_palavras_arquivo(const std::string& arquivo) {
         throw std::runtime_error("Erro ao abrir o arquivo: " + arquivo);
     }
 
-    // Lê todo o conteúdo do arquivo para uma string
     std::string texto((std::istreambuf_iterator<char>(entrada)),
                       std::istreambuf_iterator<char>());
 
