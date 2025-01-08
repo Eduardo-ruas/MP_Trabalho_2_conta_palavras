@@ -1,8 +1,10 @@
+// Copyright 2025 Seu Nome
 #include "conta_palavras.hpp"
 #include <fstream>
 #include <sstream>
 #include <map>
 #include <iostream>
+#include <string>
 
 std::map<std::string, int> conta_palavras(const std::string& texto) {
     std::map<std::string, int> contagem;
@@ -32,3 +34,7 @@ std::map<std::string, int> conta_palavras_arquivo(const std::string& arquivo) {
 }
 
 void imprime_contagem(const std::map<std::string, int>& contagem) {
+    for (const auto& [palavra, frequencia] : contagem) {
+        std::cout << palavra << ": " << frequencia << std::endl;
+    }
+}
