@@ -1,7 +1,12 @@
-#define CATCH_CONFIG_MAIN  // Isso diz ao Catch2 para fornecer uma função main()
-#include "catch.hpp"
-#include "conta_palavras.hpp"
-#include <fstream>
+// Copyright 2025 Eduardo de Brito Ruas
+
+// Cabeçalhos C++
+#include <fstream>  // NOLINT(build/include_subdir)
+#include <string>  // NOLINT(build/include_subdir)
+
+// Outros cabeçalhos
+#include "catch.hpp"  // NOLINT(build/include_subdir)
+#include "conta_palavras.hpp"  // NOLINT(build/include_subdir)
 
 TEST_CASE("Conta palavras em uma string simples") {
     std::string texto = "Este texto é o texto que será utilizado";
