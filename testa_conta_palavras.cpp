@@ -3,7 +3,7 @@
 // Cabeçalhos C++
 #include <fstream>
 #include <string>
-#define CATCH_CONFIG_MAIN
+#define CATCH_CONFIG_MAIN 
 
 // Outros cabeçalhos
 #include "catch.hpp"  // NOLINT(build/include_subdir)
