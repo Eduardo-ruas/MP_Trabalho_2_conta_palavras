@@ -1,5 +1,6 @@
 // Copyright 2025 Seu Nome
-#include "conta_palavras.hpp"
+
+#include "conta_palavras.hpp"  // NOLINT(build/include_subdir)
 #include <fstream>
 #include <sstream>
 #include <map>
