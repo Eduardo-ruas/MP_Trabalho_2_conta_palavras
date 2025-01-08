@@ -2,6 +2,7 @@
 #include <sstream>
 #include <map>
 #include <algorithm>
+#include <fstream>
 
 std::map<std::string, int> conta_palavras(const std::string& texto) {
     std::map<std::string, int> contagem;
@@ -14,4 +15,11 @@ std::map<std::string, int> conta_palavras(const std::string& texto) {
     }
 
     return contagem;
+}
+
+std::map<std::string, int> conta_palavras_arquivo(const std::string& arquivo) {
+    std::ifstream entrada(arquivo);
+    std::string texto((std::istreambuf_iterator<char>(entrada)),
+                       std::istreambuf_iterator<char>());
+    return conta_palavras(texto);
 }
