@@ -1,8 +1,11 @@
-// Copyright 2025 Seu Nome
+// Copyright 2025 Eduardo de Brito Ruas
+
+
+#include <iostream>
+#include <string>
+
 
 #include "conta_palavras.hpp"  // NOLINT(build/include_subdir)
-#include <iostream>             // Cabeçalhos de bibliotecas C++
-#include <string>               // Cabeçalhos de bibliotecas C++
 
 int main() {
     try {
