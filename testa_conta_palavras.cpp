@@ -28,7 +28,7 @@ TEST_CASE("Testa contagem sem diferenciar maiúsculas e minúsculas", "[conta_pa
     auto contagem = conta_palavras(texto);
     REQUIRE(contagem["este"] == 3); 
 }
-/*
+
 TEST_CASE("Testa falha em contagem incorreta", "[conta_palavras]") {
     std::string texto = "Este texto é o texto que será utilizado";
 
@@ -42,7 +42,7 @@ TEST_CASE("Testa falha em contagem incorreta", "[conta_palavras]") {
     REQUIRE(contagem["será"] == 1);
     REQUIRE(contagem["utilizado"] == 1);
 }
-*/
+
 TEST_CASE("Testa frase com números", "[conta_palavras]") {
     std::string texto = "Ele fez 4 gols";
 
@@ -52,4 +52,18 @@ TEST_CASE("Testa frase com números", "[conta_palavras]") {
     REQUIRE(contagem["fez"] == 1);
     REQUIRE(contagem["4"] == 1);
     REQUIRE(contagem["gols"] == 1);
+}
+
+TEST_CASE("Testa se a saída está em ordem alfabética", "[conta_palavras]") {
+  std::string texto = "Este texto é o texto que será utilizado zzz aaa";
+  auto contagem = conta_palavras(texto);
+
+  auto it = contagem.begin();
+  auto end = contagem.end();
+  --end;  // Para evitar acessar um iterador inválido no loop
+
+  for (; it != end; ++it) {
+    auto next = std::next(it);
+    REQUIRE(it->first <= next->first); 
+  }
 }
