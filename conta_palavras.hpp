@@ -1,5 +1,7 @@
-#ifndef CONTA_PALAVRAS_HPP
-#define CONTA_PALAVRAS_HPP
+// Copyright 2025 Eduardo de Brito Ruas
+
+#ifndef CONTA_PALAVRAS_HPP_
+#define CONTA_PALAVRAS_HPP_
 
 #include <string>
 #include <map>
@@ -13,4 +15,4 @@ std::map<std::string, int> conta_palavras_arquivo(const std::string& arquivo);
 // Função para imprimir a contagem
 void imprime_contagem(const std::map<std::string, int>& contagem);
 
-#endif
+#endif  // CONTA_PALAVRAS_HPP_

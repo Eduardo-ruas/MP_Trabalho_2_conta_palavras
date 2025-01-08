@@ -1,4 +1,4 @@
-// Copyright 2025 Seu Nome
+// Copyright 2025 Eduardo de Brito Ruas
 
 #include "conta_palavras.hpp"  // NOLINT(build/include_subdir)
 #include <fstream>
