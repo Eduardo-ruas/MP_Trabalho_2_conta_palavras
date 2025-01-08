@@ -4,16 +4,7 @@
 #include <string>
 #include <map>
 
-class ContaPalavras {
- public:
-  ContaPalavras(const std::string& nomeArquivo);
-  void lerArquivo();
-  int obterContagemTotal() const;
-  std::map<std::string, int> obterContagemPalavras() const;
-
- private:
-  std::string nomeArquivo;
-  std::map<std::string, int> contagemPalavras;
-};
+// Declaração da função
+std::map<std::string, int> conta_palavras(const std::string& texto);
 
 #endif
