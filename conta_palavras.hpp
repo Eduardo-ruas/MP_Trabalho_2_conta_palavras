@@ -6,13 +6,16 @@
 #include <string>
 #include <map>
 
-// Função que conta as palavras em uma string
-std::map<std::string, int> conta_palavras(const std::string& texto);
+class ContadorPalavras {
+public:
+    /**
+     * @brief Lê um arquivo texto, conta as palavras diferentes e lista suas ocorrências em ordem alfabética.
+     * 
+     * @param nomeArquivo O nome do arquivo a ser lido.
+     * @return Um mapa onde a chave é a palavra e o valor é a quantidade de ocorrências.
+     *         Retorna um mapa vazio se o arquivo não puder ser aberto.
+     */
+    std::map<std::string, int> contarPalavras(const std::string& nomeArquivo);
+};
 
-// Função que conta as palavras em um arquivo
-std::map<std::string, int> conta_palavras_arquivo(const std::string& arquivo);
-
-// Função que imprime a contagem das palavras
-void imprime_contagem(const std::map<std::string, int>& contagem);
-
-#endif  // CONTA_PALAVRAS_HPP_
+#endif
