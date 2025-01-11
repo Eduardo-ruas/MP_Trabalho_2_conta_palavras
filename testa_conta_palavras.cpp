@@ -60,3 +60,27 @@ TEST_CASE("Contagem de palavras em um arquivo com múltiplas linhas", "[Contador
     // Remove o arquivo temporário
     std::remove("arquivo_multiplas_linhas.txt");
 }
+
+TEST_CASE("Contagem de palavras com pontuação e maiúsculas/minúsculas", "[ContadorPalavras]") {
+    // Cria um arquivo temporário com pontuação e maiúsculas/minúsculas
+    std::ofstream arquivo("arquivo_pontuacao.txt");
+    arquivo << "Este é um Teste, com pontuação!\n";
+    arquivo << "Este é outro TESTE.\n";
+    arquivo.close();
+
+    ContadorPalavras contador;
+    std::map<std::string, int> resultado = contador.contarPalavras("arquivo_pontuacao.txt");
+
+    REQUIRE(resultado.size() == 7);
+    REQUIRE(resultado["este"] == 2);
+    REQUIRE(resultado["é"] == 2);
+    REQUIRE(resultado["um"] == 1);
+    REQUIRE(resultado["teste"] == 2);
+    REQUIRE(resultado["com"] == 1);
+    REQUIRE(resultado["pontuação"] == 1);
+    REQUIRE(resultado["outro"] == 1);
+
+    // Remove o arquivo temporário
+    std::remove("arquivo_pontuacao.txt");
+}
+
