@@ -1,5 +1,5 @@
 // Copyright 2025 Eduardo de Brito Ruas
-
+#define CATCH_CONFIG_MAIN
 // Cabeçalhos C++
 #include <fstream>
 #include <map>
@@ -8,7 +8,7 @@
 // Outros cabeçalhos
 #include "catch.hpp"           // NOLINT(build/include_subdir)
 #include "conta_palavras.hpp"  // NOLINT(build/include_subdir)
-#define CATCH_CONFIG_MAIN
+
 
 // Função auxiliar para criar arquivos de teste
 void criaArquivo(const std::string& nomeArquivo,
