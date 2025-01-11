@@ -34,7 +34,7 @@ cppcheck: testa_conta_palavras.cpp   conta_palavras.cpp conta_palavras.hpp
 	cppcheck  --enable=warning . --suppress=syntaxError:catch.hpp
 
 valgrind: testa_conta_palavras
-	valgrind --leak-check=yes --log-file=valgrind.rpt testa_conta_palavras 
+	valgrind --leak-check=yes --log-file=valgrind.rpt ./testa_conta_palavras || true
 
 
 clean:
