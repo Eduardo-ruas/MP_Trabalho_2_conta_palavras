@@ -39,3 +39,24 @@ TEST_CASE("Contagem de palavras em um arquivo com uma linha", "[ContadorPalavras
     // Remove o arquivo temporário
     std::remove("arquivo_uma_linha.txt");
 }
+
+TEST_CASE("Contagem de palavras em um arquivo com múltiplas linhas", "[ContadorPalavras]") {
+    // Cria um arquivo temporário com múltiplas linhas
+    std::ofstream arquivo("arquivo_multiplas_linhas.txt");
+    arquivo << "Este é um teste\n";
+    arquivo << "Este é outro teste\n";
+    arquivo.close();
+
+    ContadorPalavras contador;
+    std::map<std::string, int> resultado = contador.contarPalavras("arquivo_multiplas_linhas.txt");
+
+    REQUIRE(resultado.size() == 5);
+    REQUIRE(resultado["este"] == 2);
+    REQUIRE(resultado["é"] == 2);
+    REQUIRE(resultado["um"] == 1);
+    REQUIRE(resultado["teste"] == 2);
+    REQUIRE(resultado["outro"] == 1);
+
+    // Remove o arquivo temporário
+    std::remove("arquivo_multiplas_linhas.txt");
+}
