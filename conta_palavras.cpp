@@ -60,4 +60,3 @@ void imprime_contagem(const std::map<std::string, int>& contagem) {
     }
 }
 
-
