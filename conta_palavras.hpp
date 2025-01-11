@@ -6,15 +6,26 @@
 #include <map>
 #include <string>
 
+/**
+ * @brief Classe responsável por contar a frequência de palavras em um arquivo de texto.
+ *
+ * Esta classe fornece um método para ler um arquivo, contar a frequência de palavras
+ * diferentes e retornar um mapa com as palavras em ordem alfabética e suas respectivas
+ * ocorrências.
+ */
 class ContadorPalavras {
  public:
   /**
-   * @brief Lê um arquivo texto, conta as palavras diferentes e lista
-   * suas ocorrências em ordem alfabética.
+   * @brief Conta a frequência de palavras em um arquivo texto.
    *
-   * @param nomeArquivo O nome do arquivo a ser lido.
+   * Este método lê o arquivo linha por linha, remove pontuações, converte
+   * as palavras para letras minúsculas e calcula a frequência de cada
+   * palavra. As palavras são organizadas em ordem alfabética no mapa de
+   * retorno.
+   *
+   * @param nomeArquivo O caminho ou nome do arquivo a ser lido.
    * @return Um mapa onde a chave é a palavra e o valor é a quantidade de
-   * ocorrências. Retorna um mapa vazio se o arquivo não puder ser aberto.
+   *         ocorrências. Retorna um mapa vazio se o arquivo não puder ser aberto.
    */
   std::map<std::string, int> contarPalavras(const std::string& nomeArquivo);
 };

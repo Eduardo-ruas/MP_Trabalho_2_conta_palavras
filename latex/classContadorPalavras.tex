@@ -1,0 +1,62 @@
+\hypertarget{classContadorPalavras}{}\doxysection{Contador\+Palavras Class Reference}
+\label{classContadorPalavras}\index{ContadorPalavras@{ContadorPalavras}}
+
+
+Classe responsável por contar a frequência de palavras em um arquivo de texto.  
+
+
+
+
+{\ttfamily \#include $<$conta\+\_\+palavras.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ std\+::string, int $>$ \mbox{\hyperlink{classContadorPalavras_aa1b45afd9649aa6dceea9eae9269c08d}{contar\+Palavras}} (const std\+::string \&nome\+Arquivo)
+\begin{DoxyCompactList}\small\item\em Conta a frequência de palavras em um arquivo texto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe responsável por contar a frequência de palavras em um arquivo de texto. 
+
+Esta classe fornece um método para ler um arquivo, contar a frequência de palavras diferentes e retornar um mapa com as palavras em ordem alfabética e suas respectivas ocorrências. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classContadorPalavras_aa1b45afd9649aa6dceea9eae9269c08d}\label{classContadorPalavras_aa1b45afd9649aa6dceea9eae9269c08d}} 
+\index{ContadorPalavras@{ContadorPalavras}!contarPalavras@{contarPalavras}}
+\index{contarPalavras@{contarPalavras}!ContadorPalavras@{ContadorPalavras}}
+\doxysubsubsection{\texorpdfstring{contarPalavras()}{contarPalavras()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, int $>$ Contador\+Palavras\+::contar\+Palavras (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nome\+Arquivo }\end{DoxyParamCaption})}
+
+
+
+Conta a frequência de palavras em um arquivo texto. 
+
+Conta a frequência de cada palavra em um arquivo de texto.
+
+Este método lê o arquivo linha por linha, remove pontuações, converte as palavras para letras minúsculas e calcula a frequência de cada palavra. As palavras são organizadas em ordem alfabética no mapa de retorno.
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Arquivo} & O caminho ou nome do arquivo a ser lido. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Um mapa onde a chave é a palavra e o valor é a quantidade de ocorrências. Retorna um mapa vazio se o arquivo não puder ser aberto.
+\end{DoxyReturn}
+Este método lê um arquivo linha por linha, remove pontuações, converte as palavras para letras minúsculas e calcula a frequência de cada palavra.
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Arquivo} & Caminho para o arquivo que será processado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Um mapa onde as chaves são as palavras encontradas no arquivo e os valores são a frequência de cada palavra. Retorna um mapa vazio se o arquivo não puder ser aberto. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+conta\+\_\+palavras.\+hpp\item 
+conta\+\_\+palavras.\+cpp\end{DoxyCompactItemize}
