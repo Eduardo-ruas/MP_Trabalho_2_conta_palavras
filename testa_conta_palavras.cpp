@@ -14,3 +14,9 @@ TEST_CASE("Contagem de palavras em um arquivo vazio", "[ContadorPalavras]") {
     std::map<std::string, int> resultado = contador.contarPalavras("arquivo_vazio.txt");
     REQUIRE(resultado.empty());
 }
+
+TEST_CASE("Contagem de palavras em um arquivo inexistente", "[ContadorPalavras]") {
+    ContadorPalavras contador;
+    std::map<std::string, int> resultado = contador.contarPalavras("arquivo_inexistente.txt");
+    REQUIRE(resultado.empty());
+}
