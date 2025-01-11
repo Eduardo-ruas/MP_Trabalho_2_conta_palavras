@@ -84,3 +84,48 @@ TEST_CASE("Contagem de palavras com pontuação e maiúsculas/minúsculas", "[Co
     std::remove("arquivo_pontuacao.txt");
 }
 
+TEST_CASE("Contagem do exemplo", "[ContadorPalavras]") {
+    // Cria um arquivo temporário com o texto do exemplo
+    std::ofstream arquivo("arquivo_exemplo.txt");
+    arquivo << "Este texto é o texto que será utilizado\n";
+    arquivo.close();
+
+    ContadorPalavras contador;
+    std::map<std::string, int> resultado = contador.contarPalavras("arquivo_exemplo.txt");
+
+    REQUIRE(resultado.size() == 7);
+    REQUIRE(resultado["este"] == 1);
+    REQUIRE(resultado["texto"] == 2);
+    REQUIRE(resultado["é"] == 1);
+    REQUIRE(resultado["o"] == 1);
+    REQUIRE(resultado["que"] == 1);
+    REQUIRE(resultado["será"] == 1);
+    REQUIRE(resultado["utilizado"] == 1);
+
+    // Remove o arquivo temporário
+    std::remove("arquivo_exemplo.txt");
+}
+
+TEST_CASE("Verificar ordenação alfabética da saída", "[ContadorPalavras]") {
+    // Cria um arquivo temporário com palavras fora de ordem
+    std::ofstream arquivo("arquivo_desordenado.txt");
+    arquivo << "zebra abacate dado casa bola\n";
+    arquivo << "elefante abacate\n";
+    arquivo.close();
+
+    ContadorPalavras contador;
+    std::map<std::string, int> resultado = contador.contarPalavras("arquivo_desordenado.txt");
+
+    // Verifica se o mapa está vazio (não deveria estar)
+    REQUIRE_FALSE(resultado.empty());
+
+    // Verifica se a saída está em ordem alfabética
+    std::string palavraAnterior = "";
+    for (const auto& par : resultado) {
+        REQUIRE(palavraAnterior <= par.first);
+        palavraAnterior = par.first;
+    }
+
+    // Remove o arquivo temporário
+    std::remove("arquivo_desordenado.txt");
+}
