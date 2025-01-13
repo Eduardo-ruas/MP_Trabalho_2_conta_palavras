@@ -1,0 +1,246 @@
+eduardo@DESKTOP-FFN2OM5:~/MP_trab_2_conta_palavras$ git log
+commit c20cc3d307802b788fc248ffeead4ad4b578dade (HEAD -> main, origin/main)
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Jan 13 11:24:42 2025 -0300
+
+    Arquivo git log criado contendo os históticos de commites do projeto
+
+commit c5c0ba1aa81b4b8c0cfe064384ba8f24444089a1
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Jan 13 11:11:33 2025 -0300
+
+    link do repositorio adicionado no arquivo leiame.txt
+
+commit 3cbda2d72ae4eecc98807e3c79197ed7169561fa
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Jan 13 11:02:02 2025 -0300
+
+    diretorio compactado
+
+commit 53b90deed7297b1e78805a05749811ca23df431b
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Jan 13 10:49:47 2025 -0300
+
+    Arquivo leiame.txt criado com objetivo de explicar como se compilar o programa
+
+commit 9156b284c7a2a17e22a8313e2f0ed7c05a874536
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Jan 13 10:19:22 2025 -0300
+
+    Erros apontados pelo cpplint corrigidos
+
+commit 2f69486097afaf32669724221b82d16a54f309f8
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Sat Jan 11 20:54:33 2025 -0300
+
+    Arquivo Doxygen desenvolvido
+
+commit 25c6c9728058c609f02bb0792447db19ea3857cc
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Sat Jan 11 20:12:32 2025 -0300
+
+    Documentação Javadoc feita nos arquivos
+
+commit 4706bd35c245a25b600fdd53bebe0e5cfcd6a27d
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Sat Jan 11 19:54:15 2025 -0300
+
+    Arquivos conta_palavras.cpp, conta_palavras.hpp, testa_conta_palavras.cpp e Makefile desenvolvidos
+
+commit 5073069dd81dccf8620af884da5f79fcc1d7f076
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Sat Jan 11 19:32:53 2025 -0300
+
+    Resolvendo erros
+
+commit 94a8f5faf5eb0b88122f77544c975830068e606a
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Sat Jan 11 18:11:03 2025 -0300
+
+    Teste: Verificar ordenação alfabética da saída, realizado
+
+commit 3cf97a9ab2cd3cb8d0261a8cfe2713bfcdf22dbd
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Sat Jan 11 18:07:27 2025 -0300
+
+    Teste: Contagem do exemplo, realizado
+
+commit 328c8fe27f2404f13ac08a2a4d1f5b38f8faad30
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Sat Jan 11 18:03:32 2025 -0300
+
+    teste:Contagem de palavras em um arquivo com múltiplas linhas, realizado
+
+commit 4e8e58252ab3149c184fc62bfa740fa4b7214a9c
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Sat Jan 11 18:01:13 2025 -0300
+
+    teste:Contagem de palavras em um arquivo com uma linha, realizado
+
+commit 1717da4510f19a66c074933f106cab11b06b24ab
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Sat Jan 11 17:59:03 2025 -0300
+
+    teste: Contagem de palavras em um arquivo inexistente, realizado
+
+commit 0f7bc44daa37e6ae18783b1bd112731b9fc97b08
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Sat Jan 11 17:57:29 2025 -0300
+
+    teste: Contagem de palavras em um arquivo vazio, realizado
+
+commit 0db5285c456f6cafb4052ba385fa9e67ebd9fc8e
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Sat Jan 11 17:55:42 2025 -0300
+
+    Arquivos conta_palavras.cpp, conta_palavras.hpp, testa_conta_palavras.hpp alterados e em desenvolvimento
+
+commit 6daf4c473674cde58ca8c01853d39e4b0bed7ba6
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Sat Jan 11 14:56:33 2025 -0300
+
+    verificar dinâmico Valgrind aplicado
+
+commit 58edbcdb416d2c27317e931af2ada62450ef4042
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Sat Jan 11 14:29:39 2025 -0300
+
+    Teste de cobertura gcov feito
+
+commit 0672fc29fbe510b04ab2370bb22d28e32dbb21c8
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Wed Jan 8 17:42:40 2025 -0300
+
+    Quinto teste realizado
+
+commit 618f85165ba3ae5da824d98dd6c790038fee41a5
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Wed Jan 8 17:36:30 2025 -0300
+
+    Quarto teste feito
+
+commit bec75a78d457f2d90d0ac46c8fef0826cc545adf
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Wed Jan 8 17:27:17 2025 -0300
+
+    Terceiro teste realizado
+
+commit 2571c224575c0afb95256e5ae98720e500fe4cf8
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Wed Jan 8 16:48:12 2025 -0300
+
+    Segundo teste realizado
+
+commit a894a44051807ec22c05af8b2f0403d86df9a841
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Wed Jan 8 15:43:39 2025 -0300
+
+    Arquivos depurados atraves do uso do gdb
+
+commit 5c129aa33e5005ef75256cedbf884984a0c259f2
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Wed Jan 8 15:27:16 2025 -0300
+
+    primeiro teste realizado
+
+commit 96ae6925f6c6096e139d1d43b018b6197c4fac41
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Wed Jan 8 15:25:14 2025 -0300
+
+    Arquivos desenvolvidos no padrão do cpplint
+
+commit 5809e794e529b74a0ba2c8a0d891b37d86d498d1
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Wed Jan 8 15:07:25 2025 -0300
+
+    Arquivo main.cpp deletado pois não houve a necessidade de tal arquivo
+
+commit 600c53c65518079b0dd8f470cb460a8036c639f2
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Wed Jan 8 13:33:02 2025 -0300
+
+    arquivos salvos
+
+commit a46d672eeed49745abd31a641b3abba7f20d87ba
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Wed Jan 8 13:24:06 2025 -0300
+
+    Arquivo Makefile em desenvolvimento
+
+commit 90eaf4a9343a9936ca696942d1dbb64545efa43a
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Wed Jan 8 13:17:22 2025 -0300
+
+    arquivo testa_conta_palavra.cpp corrigido para os padroes do cpplint
+
+commit 6f689fa0042ea0b5b7eac3bb3801d0a90632c199
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Wed Jan 8 13:00:17 2025 -0300
+
+    Arquivo main.cpp corrigido para os padroes do cpplint
+
+commit 4f989cae2e12a020e3498f5b40ad8ddb4fa41021
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Wed Jan 8 12:41:25 2025 -0300
+
+    correção do arquivo conta_palavras.hpp para os padroes do cpplint
+
+commit 8c3f2b7bc1e129adb92f34fb5964b2e15c700c1e
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Wed Jan 8 12:35:48 2025 -0300
+
+    Arquivo conta_palavras.cpp sem erros relacionados ao cpplint
+
+commit 4d76a2943c5acc94733f3e79eb58fd641dc1ccd6
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Wed Jan 8 12:22:22 2025 -0300
+
+    consertando erros apontados pelo cpplint no arquivo conta_palavras.cpp
+
+commit 7fae9afeed7db48d2edccc4d6fd226ec23debdf6
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Wed Jan 8 12:02:33 2025 -0300
+
+    arquivos salvos
+
+commit 90d924f1b6efd1a3d8e3d44c069f5026b746ca41
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Wed Jan 8 11:59:58 2025 -0300
+
+    cpplint adicionado ao PATH para verificar se o codigo-fonte C++ segue o guia de estilo do google
+
+commit 26220dfdfb5b8c795011ed951b2c328696b32e37
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Wed Jan 8 11:36:49 2025 -0300
+
+    Arquivo testa_conta_palavra.cpp em desenvolvimento
+
+commit 630cee025d4c50e8f04737fcfd650b1b4faaf41c
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Wed Jan 8 11:21:45 2025 -0300
+
+    Arquivo main.cpp adicionado para ler o arquivo texto.txt e exibir o resultado,porem ainda esta em desenvolvimento
+
+commit 27bcdc173c48c6926f73da9741c4322a2d948a11
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Wed Jan 8 11:15:29 2025 -0300
+
+    Arquivo testa_conta_palavras.cppem desenvolvimento
+
+commit c0b5284e8efba0fc3433c04b292830be2a84466b
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Wed Jan 8 11:08:36 2025 -0300
+
+    Arquivo conta_palavras.cpp em desenvolimento
+
+commit c7b4731e63e7850ecccc12e694fb1f27874a717b
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Wed Jan 8 11:01:58 2025 -0300
+
+    Arquivo conta_palavras.hpp em desenvolvimento
+
+commit 6627f1d83c369dd2881a140ad07953dada598699
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Wed Jan 8 10:55:37 2025 -0300
+
+    Arquivos criados
