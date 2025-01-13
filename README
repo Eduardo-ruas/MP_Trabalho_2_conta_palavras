@@ -1,0 +1,41 @@
+Este arquivo descreve como compilar o programa "conta_palavras".
+
+Requisitos:
+
+    Um compilador C++ compatível com o padrão C++11 ou superior (como g++).
+    A biblioteca padrão C++.
+    O programa make (opcional, para compilação simplificada).
+
+Compilação:
+
+Usando make:
+
+    Abra o terminal na pasta do projeto.
+    Execute o comando make all ou make compile.
+
+Isso irá gerar o executável conta_palavras.
+
+
+COMANDOS PARA COMPILAR O ARQUIVO UTILIZANDO O MAKE:
+
+make all
+
+make compile
+
+make conta_palavras.O
+
+make testa_conta_palavras
+
+make test
+
+make cpplint
+
+make gcov
+
+make cppcheck
+
+make debug
+
+make valgrind 
+
+make clean
