@@ -39,3 +39,5 @@ make debug
 make valgrind 
 
 make clean
+
+link do repositório github: https://github.com/Eduardo-ruas/MP_Trabalho_2_conta_palavras.git
